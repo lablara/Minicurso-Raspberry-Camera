@@ -14,13 +14,14 @@ sensor = DistanceSensor (echo=18, trigger=23, max_distance=0.5)
 def fotografar():
 	
 	azul.on()
-	som.beep()
+	som.on()
 	
 	hora = datetime.now()
 	camera.capture (str(hora) + ".jpg")
 	print ("Foto capturada: " + str(hora))
 	
 	azul.off()
+	som.off()
 
 sleep (1)
 
