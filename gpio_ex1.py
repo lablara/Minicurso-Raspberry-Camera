@@ -1,10 +1,10 @@
-import gpizero
+import gpiozero
 from time import sleep
 
-verde = gpiozero.Led (18)
-vermelho = gpiozero.Led (23)
-amarelo = gpiozero.Led (24)
-azul = gpiozero.Led (25)
+verde = gpiozero.LED (18)
+vermelho = gpiozero.LED (23)
+amarelo = gpiozero.LED (24)
+azul = gpiozero.LED (25)
 
 sleep (1)
 
