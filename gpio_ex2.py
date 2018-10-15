@@ -4,7 +4,7 @@ from time import sleep
 
 camera = PiCamera()
 
-butao = Button (18)
+botao = Button (18)
 
 azul = LED (25)
 
