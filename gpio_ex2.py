@@ -10,6 +10,7 @@ azul = LED (25)
 
 def fotografar():
 	camera.capture ("foto.jpg")
+	print ("Foto capturada")
 
 def ligarled():
 	azul.on()
@@ -17,6 +18,7 @@ def ligarled():
 	azul.off()
 
 sleep (1)
+print ("Iniciando programa de captura de imagens")
 
 botao.when_pressed = ligarled
 botao.when_released = fotografar
