@@ -12,7 +12,6 @@ som = Buzzer(24)
 sensor = DistanceSensor (echo=18, trigger=23, max_distance=0.5)
 
 def fotografar():
-	
 	azul.on()
 	som.on()
 	
@@ -20,6 +19,7 @@ def fotografar():
 	camera.capture (str(hora) + ".jpg")
 	print ("Foto capturada: " + str(hora))
 	
+	sleep(0.5)
 	azul.off()
 	som.off()
 
