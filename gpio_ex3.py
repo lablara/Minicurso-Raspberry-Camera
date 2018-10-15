@@ -4,7 +4,7 @@ from time import sleep
 from datetime import datetime
 
 camera = PiCamera()
-camera.rotate = 180
+camera.rotation = 180
 
 azul = LED (25)
 som = Buzzer(24)
