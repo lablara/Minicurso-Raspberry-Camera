@@ -1,6 +1,7 @@
 from picamera import PiCamera
 from gpiozero import Button, LED
 from time import sleep
+from signal import pause
 
 camera = PiCamera()
 
@@ -22,3 +23,5 @@ print ("Iniciando programa de captura de imagens")
 
 botao.when_pressed = ligarled
 botao.when_released = fotografar
+
+pause()
