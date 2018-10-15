@@ -6,7 +6,7 @@ from datetime import datetime
 camera = PiCamera()
 
 azul = LED (25)
-som = Buzzer()
+som = Buzzer(24)
 
 sensor = DistanceSensor (echo=18, trigger=23, max_distance=0.5)
 
